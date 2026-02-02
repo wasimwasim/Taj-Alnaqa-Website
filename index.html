@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة تاج النقاء للمنظفات | Taj Al-Naqa</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 bg-transparent" id="navbar">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-white flex items-center gap-2" id="logo-text">
+                <i class="fa-solid fa-crown text-[#D4AF37]"></i>
+                تاج النقاء
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                <a href="#home" class="nav-link text-white font-medium hover:text-[#D4AF37] transition">الرئيسية</a>
+                <a href="#about" class="nav-link text-white font-medium hover:text-[#D4AF37] transition">من نحن</a>
+                <a href="#products" class="nav-link text-white font-medium hover:text-[#D4AF37] transition">منتجاتنا</a>
+                <a href="#values" class="nav-link text-white font-medium hover:text-[#D4AF37] transition">قيمنا</a>
+                <a href="https://wa.me/967774987789" target="_blank"
+                    class="px-5 py-2 bg-[#D4AF37] text-white rounded-full font-bold hover:bg-[#b5952f] transition shadow-lg transform hover:scale-105">
+                    تواصل معنا
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-nav"
+            class="hidden md:hidden bg-white shadow-lg absolute w-full left-0 top-full py-4 px-6 flex flex-col space-y-4">
+            <a href="#home" class="text-green-900 font-medium hover:text-[#D4AF37]">الرئيسية</a>
+            <a href="#about" class="text-green-900 font-medium hover:text-[#D4AF37]">من نحن</a>
+            <a href="#products" class="text-green-900 font-medium hover:text-[#D4AF37]">منتجاتنا</a>
+            <a href="#values" class="text-green-900 font-medium hover:text-[#D4AF37]">قيمنا</a>
+            <a href="https://wa.me/967774987789" target="_blank" class="text-[#D4AF37] font-bold">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-20">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <span class="text-[#D4AF37] font-bold tracking-wider text-sm uppercase mb-2 block">جودة يمنية عالمية
+                    ✨</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                    مفهوم جديد <br> <span class="text-[#D4AF37]">للنظافة والنقاء</span>
+                </h1>
+                <p class="text-gray-200 text-lg mb-8 leading-relaxed max-w-lg">
+                    نحن في مؤسسة تاج النقاء نبتكر حلولاً متكاملة لنظافة منزلك، بمنتجات وطنية صُنعت بأيدي خبراء لتمنحك
+                    نقاءً تستحقينه.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#products"
+                        class="px-8 py-3 bg-[#D4AF37] text-white rounded-full font-bold hover:bg-[#b5952f] transition shadow-lg transform hover:scale-105">
+                        اكتشف فيري جولد
+                    </a>
+                    <a href="#about"
+                        class="px-8 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-[#004D25] transition">
+                        عن المؤسسة
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden md:block" data-aos="fade-right" data-aos-duration="1200">
+                <!-- Floating Elements Background -->
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-[#004D25] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse">
+                </div>
+
+                <img src="assets/img/fairy-gold.png" alt="Fairy Gold Product"
+                    class="relative z-10 w-full max-w-md mx-auto hero-image-frame animate-float">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-[#004D25] mb-2">من نحن</h2>
+                <div class="w-16 h-1 bg-[#D4AF37] mx-auto rounded"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    تأسست مؤسسة تاج النقاء للمنظفات في عام 2026، برؤية واضحة تهدف لرفع مستوى العناية بالمنازل.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-left">
+                    <img src="assets/img/vision.png" alt="About Taj Al-Naqa"
+                        class="rounded-2xl shadow-2xl hover:scale-[1.01] transition duration-500">
+                </div>
+                <div class="space-y-6" data-aos="fade-right">
+                    <div class="glass-card p-6 rounded-xl border-r-4 border-[#D4AF37]">
+                        <h3 class="text-xl font-bold text-[#004D25] mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-eye text-[#D4AF37]"></i>
+                            رؤيتنا
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            تحقيق الريادة والتميز في قطاع صناعة المنظفات محلياً بمعايير عالمية، لنكون الخيار الأول
+                            للعائلة السعودية.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl border-r-4 border-[#004D25]">
+                        <h3 class="text-xl font-bold text-[#004D25] mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-bullseye text-[#D4AF37]"></i>
+                            رسالتنا
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            تقديم حلول مبتكرة من خلال تكريس كافة الإمكانيات المادية والعلمية في تطوير العمليات الإنتاجية
+                            لتحقيق أقصى درجات رضى العميل.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl border-r-4 border-[#D4AF37]">
+                        <h3 class="text-xl font-bold text-[#004D25] mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-star text-[#D4AF37]"></i>
+                            أهدافنا
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>تقديم منتجات عالية الجودة وآمنة.</li>
+                            <li>تلبية احتياجات السوق المحلي.</li>
+                            <li>دعم الاقتصاد الوطني وتقليل البطالة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase (Fairy Gold) -->
+    <section id="products" class="py-20 bg-gray-50 relative">
+        <div class="absolute inset-0 bg-[url('assets/img/hero-bg.png')] opacity-5 bg-fixed bg-cover"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 order-2 md:order-1" data-aos="fade-up">
+                    <span class="text-[#D4AF37] font-bold text-sm tracking-widest uppercase mb-1 block">فخر
+                        صناعتنا</span>
+                    <h2 class="text-4xl font-extrabold text-[#004D25] mb-6">فيري جولد <span
+                            class="text-[#D4AF37] font-light">PRO</span></h2>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        سائل تنظيف الأطباق والأواني المنزلية، منتج وطني صُنع على أيدي خبراء وكفاءات محلية بجودة تضاهي
+                        المنتجات العالمية.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-[#004D25] flex-shrink-0">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">إزالة الدهون</h4>
+                                <p class="text-sm text-gray-500">يقضي على البقع الصعبة فوراً.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-[#D4AF37] flex-shrink-0">
+                                <i class="fa-solid fa-soap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">رغوة كثيفة</h4>
+                                <p class="text-sm text-gray-500">فعالية عالية بأقل كمية.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">آمن لليدين</h4>
+                                <p class="text-sm text-gray-500">نعومة فائقة لا تسبب الجفاف.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">روائح منعشة</h4>
+                                <p class="text-sm text-gray-500">عطور تدوم وتعطر مطبخك.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 order-1 md:order-2 flex justify-center" data-aos="zoom-in">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-[#D4AF37] blur-[60px] opacity-20 rounded-full"></div>
+                        <img src="assets/img/fairy-gold.png" alt="Fairy Gold Bottle"
+                            class="relative z-10 w-64 md:w-80 product-glow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-20 bg-[#004D25] text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="hexagons" width="50" height="43.4" patternUnits="userSpaceOnUse"
+                        patternTransform="scale(2)">
+                        <polygon points="25 0 50 14.4 50 43.3 25 57.7 0 43.3 0 14.4" fill="none" stroke="#fff"
+                            stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#hexagons)" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-2">قيمنا الراسخة</h2>
+                <div class="w-16 h-1 bg-[#D4AF37] mx-auto rounded"></div>
+                <p class="text-gray-300 mt-4">المبادئ التي تقودنا نحو التميز</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 text-center">
+                <!-- Value 1 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 class="font-bold text-sm">النزاهة التجارية</h3>
+                </div>
+                <!-- Value 2 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-solid fa-flag"></i></div>
+                    <h3 class="font-bold text-sm">الريادة الوطنية</h3>
+                </div>
+                <!-- Value 3 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3 class="font-bold text-sm">التطوير والتنمية</h3>
+                </div>
+                <!-- Value 4 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="font-bold text-sm">العمل الجماعي</h3>
+                </div>
+                <!-- Value 5 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-regular fa-handshake"></i></div>
+                    <h3 class="font-bold text-sm">شفافية التعامل</h3>
+                </div>
+                <!-- Value 6 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-solid fa-award"></i></div>
+                    <h3 class="font-bold text-sm">إتقان وموثوقية</h3>
+                </div>
+                <!-- Value 7 -->
+                <div class="value-card bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="700">
+                    <div class="text-2xl mb-2 text-[#D4AF37]"><i class="fa-solid fa-check-double"></i></div>
+                    <h3 class="font-bold text-sm">المصداقية</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-[#D4AF37]">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-2xl font-bold">
+                        <i class="fa-solid fa-crown text-[#D4AF37]"></i>
+                        تاج النقاء
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        نلتزم بتقديم أفضل منتجات التنظيف التي تجمع بين الجودة العالمية والخبرة الوطنية. نسعى دائماً
+                        لنكون شركاءكم في نظافة وجمال منازلكم.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-[#D4AF37] transition">الرئيسية</a></li>
+                        <li><a href="#about" class="hover:text-[#D4AF37] transition">عن المؤسسة</a></li>
+                        <li><a href="#products" class="hover:text-[#D4AF37] transition">منتجاتنا</a></li>
+                        <li><a href="https://taj-alnaqa.vercel.app/admin" class="hover:text-[#D4AF37] transition">دخول
+                                الموظفين</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">تواصل معنا</h3>
+                    <div class="space-y-3 text-gray-400">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-[#D4AF37]"></i>
+                            <span>info@taj-alnaqa.com</span>
+                        </div>
+                        <a href="https://wa.me/967774987789" target="_blank"
+                            class="flex items-center gap-3 hover:text-[#D4AF37] transition">
+                            <i class="fa-brands fa-whatsapp text-[#D4AF37] text-xl"></i>
+                            <span dir="ltr">+967 774 987 789</span>
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-[#D4AF37]"></i>
+                            <span>صنعاء، اليمن</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-white transition"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-white transition"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#D4AF37] hover:text-white transition"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 مؤسسة تاج النقاء للمنظفات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+
+</html>
